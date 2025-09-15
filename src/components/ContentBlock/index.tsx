@@ -50,6 +50,7 @@ const ContentBlock = ({
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               {direction === "right" ? (
+                <>
                 <ButtonWrapper>
                   {typeof button === "object" &&
                     button.map(
@@ -72,6 +73,36 @@ const ContentBlock = ({
                       }
                     )}
                 </ButtonWrapper>
+                <ServiceWrapper>
+                  <Row justify="space-between">
+                    {typeof section === "object" &&
+                      section.map(
+                        (
+                          item: {
+                            title: string;
+                            content: string;
+                            icon: string;
+                          },
+                          id: number
+                        ) => {
+                          return (
+                            <Col key={id} span={11}>
+                              <SvgIcon
+                                src={item.icon}
+                                width="60px"
+                                height="60px"
+                              />
+                              <MinTitle>{t(item.title)}</MinTitle>
+                              <MinPara>{t(item.content)}</MinPara>
+                            </Col>
+                          );
+                        }
+                      )}
+                  </Row>
+                </ServiceWrapper>
+                </>
+                
+                
               ) : (
                 <ServiceWrapper>
                   <Row justify="space-between">
