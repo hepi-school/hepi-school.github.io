@@ -5,12 +5,17 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import RuangLingkupContent from "../../content/RuangLingkupContent.json";
+import SocialMediaContent from "../../content/SocialMediaContent.json";
+
+import SocialMediaBlock from "../../components/SocialMediaBlock";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const ContentBlockLotties = lazy(() => import("../../components/ContentBlockLotties"));
 
 const Home = () => {
   return (
@@ -29,27 +34,31 @@ const Home = () => {
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
       />
-      <ContentBlock
+      <ContentBlockLotties
         direction="left"
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="books 5_Lottie.json"
         id="about"
       />
-      <ContentBlock
+      <ContentBlockLotties
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon="product-launch.svg"
+        section={RuangLingkupContent.section}
+        icon="Book with bookmark.lottie"
         id="mission"
       />
-      <ContentBlock
-        direction="left"
+      <MiddleBlock
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
-        id="product"
+        button={MiddleBlockContent.button}
+      />
+      <SocialMediaBlock
+        title={SocialMediaContent.title}
+        content={SocialMediaContent.text}
+        count = {3}
       />
       <Contact
         title={ContactContent.title}

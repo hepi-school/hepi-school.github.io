@@ -1,15 +1,20 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Kurikulum Kami",
+  "text": "                                   ",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Al Qur'an",
+      "content": "Pendekatan cara baca Al-Quran sesuai periwayatan dengan menggunakan buku Tamhid sebagai pegangan dan Manzhumah Jazariyyah sebagai rujukan.",
+      "icon": "quranic.svg"
+    },
+    {
+      "title": "Diniyah",
+      "content": "Materi dasar keislaman yang bersumber dari Al Qur'an, Hadits, perkataan para sahabat dan ulama yang beraqidah Ahlu Sunnah wal Jama'ah. Meliputi aspek aqidahm adab, fikih, sirah serta tahfizhul hadits dan Do'a",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Umum",
+      "content": "Pengetahuan umum yang bersumber dari kurikulum nasional yang ditetapkan oleh pemerintah dan disesuaikan dengan karakter HEPI School meliputi aspek sains, sosial, bahasa, life skill dan olahraga.",
       "icon": "notes.svg"
     }
   ]

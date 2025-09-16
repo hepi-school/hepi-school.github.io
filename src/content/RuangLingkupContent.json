@@ -1,0 +1,19 @@
+{
+"section": [
+    {
+      "title": "Praktek Ibadah",
+      "content": "Sifat wudhu, sifat shalat (Dhuha), dzikir pagi, shalat dzuhur berjama'ah, dzikir ba'da shalat, shalat Jum'at dan lain-lain.",
+      "icon": "religious-muslim.svg"
+    },
+    {
+      "title": "Ta'lim",
+      "content": "Pendalaman materi pelajaran dan kajian ilmiah.",
+      "icon": "muslim-pro.svg"
+    },
+    {
+      "title": "Muamalah",
+      "content": "Learning by doing untuk melatih sikap sosial, meliputi budaya salam, dan salim, infaq kelas, sedekah Jum;at dan lain-lain..",
+      "icon": "two-speech-bubbles.svg"
+    }
+  ]
+}
